@@ -1,0 +1,63 @@
+SETTINGS:
+    # 用于按反应任务等的Discord令牌，用于获取表情信息
+    DISCORD_TOKEN_FOR_PARSING: ""
+    # 用于解析的代理。格式：用户名:密码@IP:端口
+    PROXY_FOR_PARSING: ""
+
+    # 并发线程数
+    THREADS: 2
+
+    # 任何操作的重试次数
+    ATTEMPTS: 5
+
+    # 将账户随机打乱顺序
+    SHUFFLE_ACCOUNTS: true
+
+    # 账户范围。
+    # 默认值：[0, 0] - 使用所有账户
+    # [3, 5] - 仅使用第3、4、5个账户
+    # [7, 7] - 仅使用第7个账户
+    ACCOUNTS_RANGE: [0, 0]
+
+    # 仅当 ACCOUNTS_RANGE 为 [0, 0] 时生效
+    # 指定要使用的具体账户。
+    # 默认值：[] - 使用所有账户
+    # 示例：[1, 4, 6] - 机器人将仅使用第1、4、6个账户
+    EXACT_ACCOUNTS_TO_USE: []
+
+    # 重试之间的暂停时间（秒）
+    PAUSE_BETWEEN_ATTEMPTS: [1, 2]
+
+    # 账户之间的暂停时间（秒）
+    RANDOM_PAUSE_BETWEEN_ACCOUNTS: [1, 2]
+
+    # 操作之间的暂停时间（秒）
+    RANDOM_PAUSE_BETWEEN_ACTIONS: [1, 2]
+
+    # 每个账户开始前的随机暂停时间（秒）
+    # 以确保所有账户在不同时间启动
+    RANDOM_INITIALIZATION_PAUSE: [1, 2]
+
+    # 为更换头像任务使用随机头像
+    RANDOM_PROFILE_PICTURES: true
+
+
+CHAT_GPT:
+    # API密钥列表。机器人将为每条消息随机使用一个API密钥。
+    API_KEYS: ["sk-proj-"]
+    # 要使用的ChatGPT模型。参考：https://platform.openai.com/docs/models
+    MODEL: "gpt-4o"
+
+    # 在某些国家可能需要使用代理访问ChatGPT。
+    # 默认值为空。格式：用户名:密码@IP:端口
+    PROXY_FOR_CHAT_GPT: ""
+
+DEEPSEEK:
+    # API密钥列表。机器人将为每条消息随机使用一个API密钥。
+    API_KEYS: ["sk-2ab59adf27834069a2fa688f91446998"]
+    # 要使用的ChatGPT模型。参考：https://platform.openai.com/docs/models
+    MODEL: "deepseek-chat"
+
+    # 在某些国家可能需要使用代理访问ChatGPT。
+    # 默认值为空。格式：用户名:密码@IP:端口
+    PROXY_FOR_DEEPSEEK: ""
