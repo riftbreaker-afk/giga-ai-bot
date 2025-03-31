@@ -54,7 +54,7 @@ CHAT_GPT:
 
 DEEPSEEK:
     # API密钥列表。机器人将为每条消息随机使用一个API密钥。
-    API_KEYS: ["sk-2ab59adf27834069a2fa688f91446998"]
+    API_KEYS: ["sk-2ab59adf27834069a2f************"]
     # 要使用的ChatGPT模型。参考：https://platform.openai.com/docs/models
     MODEL: "deepseek-chat"
 
